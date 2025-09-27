@@ -12,6 +12,7 @@ interface CryptoCurrency {
   network: string;
   icon: string;
   iconBg: string;
+  disabled?: boolean;
 }
 
 export default function ReceivePage(): JSX.Element {
@@ -19,6 +20,17 @@ export default function ReceivePage(): JSX.Element {
   // const [selectedNetwork, setSelectedNetwork] = useState<string>("All Networks");
   const router = useRouter();
   const [copied, setCopied] = useState<string | null>("");
+  const [showCopiedMessage, setShowCopiedMessage] = useState<boolean>(false);
+
+  const handleDisabledClick = async (): Promise<void> => {
+    try {
+      // await navigator.clipboard.writeText(walletAddress);
+      setShowCopiedMessage(true);
+      setTimeout(() => setShowCopiedMessage(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy address:", err);
+    }
+  };
 
   const popularCryptos: CryptoCurrency[] = [
     {
@@ -29,6 +41,7 @@ export default function ReceivePage(): JSX.Element {
       network: "Bitcoin",
       icon: "₿",
       iconBg: "bg-orange-500",
+      disabled: true,
     },
     {
       id: "eth",
@@ -38,6 +51,7 @@ export default function ReceivePage(): JSX.Element {
       network: "Ethereum",
       icon: "♦",
       iconBg: "bg-gray-600",
+      disabled: false,
     },
     {
       id: "sol",
@@ -47,6 +61,7 @@ export default function ReceivePage(): JSX.Element {
       network: "Solana",
       icon: "◉",
       iconBg: "bg-purple-600",
+      disabled: false,
     },
     {
       id: "twt",
@@ -56,6 +71,7 @@ export default function ReceivePage(): JSX.Element {
       network: "BNB Smart Chain",
       icon: "🛡",
       iconBg: "bg-blue-600",
+      disabled: false,
     },
     {
       id: "bnb",
@@ -65,6 +81,7 @@ export default function ReceivePage(): JSX.Element {
       network: "BNB Smart Chain",
       icon: "⬢",
       iconBg: "bg-yellow-500",
+      disabled: false,
     },
     {
       id: "usdt",
@@ -74,6 +91,7 @@ export default function ReceivePage(): JSX.Element {
       network: "Ethereum",
       icon: "₮",
       iconBg: "bg-green-600",
+      disabled: false,
     },
     {
       id: "usdc",
@@ -83,6 +101,7 @@ export default function ReceivePage(): JSX.Element {
       network: "Ethereum",
       icon: "$",
       iconBg: "bg-blue-500",
+      disabled: false,
     },
   ];
 
@@ -121,7 +140,9 @@ export default function ReceivePage(): JSX.Element {
 
   const handleCryptoSelect = (crypto: CryptoCurrency): void => {
     console.log("Selected crypto:", crypto);
-    // Handle crypto selection logic here
+    if(crypto.id !== "btc") {
+      handleDisabledClick()
+    }    // Handle crypto selection logic here
   };
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
@@ -205,6 +226,12 @@ export default function ReceivePage(): JSX.Element {
             </div>
           )}
       </div>
+
+      {showCopiedMessage && (
+        <div className="fixed top-20 max-w-[320px] left-1/2 transform -translate-x-1/2 bg-red-600/90 text-white px-4 py-2 rounded-lg z-50">
+          Only BTC is allowed at the moment
+        </div>
+      )}
     </div>
   );
 }
