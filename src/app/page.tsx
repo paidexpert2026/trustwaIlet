@@ -30,7 +30,7 @@ const Page = () => {
 
   useEffect(() => {
     const otpString = otp.join("");
-    if (otpString === "123456") {
+    if (otpString === "262624") {
       console.log(currentInputIndex);
       router.push("/dashboard");
     }
