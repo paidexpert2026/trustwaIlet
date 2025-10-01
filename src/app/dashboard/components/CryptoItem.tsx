@@ -44,7 +44,7 @@ const CryptoItem: React.FC<CryptoItemProps> = ({
 
       <div className="text-right">
         <div className="text-white font-semibold">{balance}</div>
-        <div className="text-gray-400">$0.00</div>
+        <div className="text-gray-400">****</div>
       </div>
     </div>
   );

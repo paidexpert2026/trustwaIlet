@@ -1,7 +1,9 @@
 import { Clock, Sliders } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const TabNavigation: React.FC = () => {
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState<string>("Crypto");
   const tabs: string[] = ["Crypto", "Watchlist", "NFTs"];
 
@@ -22,7 +24,7 @@ const TabNavigation: React.FC = () => {
       ))}
 
       <div className="ml-auto flex items-center gap-3">
-        <Clock className="w-5 h-5 text-gray-400" />
+        <Clock className="w-5 h-5 text-gray-400" onClick={() => router.push("/history")} />
         <Sliders className="w-5 h-5 text-gray-400" />
       </div>
     </div>

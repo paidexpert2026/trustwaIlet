@@ -14,10 +14,10 @@ const CryptoList: React.FC = () => {
       <CryptoItem
         name="BTC"
         fullName="Bitcoin"
-        price={113811.59}
+        price={114482.03}
         change={1.07}
-        changePercent="1.07"
-        balance="0"
+        changePercent="0.45"
+        balance="****"
         icon={
           <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
             <span className="text-white font-bold">₿</span>
@@ -31,7 +31,7 @@ const CryptoList: React.FC = () => {
         price={4177.25}
         change={-0.21}
         changePercent="-0.21"
-        balance="0"
+        balance="****"
         icon={
           <div className="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center">
             <div className="w-6 h-6">
