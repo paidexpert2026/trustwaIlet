@@ -21,8 +21,8 @@ const transactions: TransactionType[] = [
   {
     id: "1",
     type: "send",
-    amount: -0.001854,
-    usdValue: 212.3,
+    amount: -0.001824,
+    usdValue: 200.3,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
     date: "Today",
@@ -30,10 +30,27 @@ const transactions: TransactionType[] = [
   {
     id: "2",
     type: "receive",
+    amount: 0.001825,
+    usdValue: 200.43,
+    status: "confirmed",
+    date: "Today",
+  },
+  {
+    id: "3",
+    type: "send",
+    amount: -0.001854,
+    usdValue: 212.3,
+    address: "bc1qcvgss...5yf0e9",
+    status: "confirmed",
+    date: "Oct 2, 2025",
+  },
+  {
+    id: "4",
+    type: "receive",
     amount: 0.001855,
     usdValue: 212.43,
     status: "confirmed",
-    date: "Today",
+    date: "Oct 2, 2025",
   }
 ];
 
