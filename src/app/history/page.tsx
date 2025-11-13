@@ -13,6 +13,7 @@ type TransactionType = {
   amount: number;
   usdValue: number;
   address?: string;
+  title?: string;
   status: "confirmed" | "pending";
   date: string;
 };
@@ -24,6 +25,7 @@ const transactions: TransactionType[] = [
     amount: -0.001854,
     usdValue: 200.20,
     address: "bc1qcvgss...5yf0e9",
+    title: "Maintenance",
     status: "confirmed",
     date: "Today", //12-11-25
   },
@@ -55,7 +57,7 @@ const transactions: TransactionType[] = [
   {
     id: "12",
     type: "send",
-    amount: -0.001854,
+    amount: -0.0000097,
     usdValue: 9070.20,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
@@ -64,7 +66,7 @@ const transactions: TransactionType[] = [
   {
     id: "11",
     type: "receive",
-    amount: 0.001855,
+    amount: 0.0000097,
     usdValue: 9000.87,
     status: "confirmed",
     date: "Nov 11, 2025",
