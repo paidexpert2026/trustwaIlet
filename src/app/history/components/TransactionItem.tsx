@@ -7,6 +7,7 @@ type TransactionType = {
   amount: number;
   usdValue: number;
   address?: string;
+  title?: string;
   status: "confirmed" | "pending";
   date: string;
 };
@@ -31,7 +32,7 @@ const TransactionItem = ({ transaction }: { transaction: TransactionType }) => {
 
         <div className="flex flex-col">
           <div className="flex items-center gap-2">
-            <span className="text-white/80 text-sm font-medium">Transfer</span>
+            <span className="text-white/80 text-sm font-medium capitalize">{title ? title : "Transfer"}</span>
             <div className="bg-green-600/20 py-1.5 px-3 rounded-full">
               <CheckCircle2
                 className="w-4 h-4 text-green-600/20"
