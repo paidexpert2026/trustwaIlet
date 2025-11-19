@@ -27,7 +27,6 @@ const transactions: TransactionType[] = [
     amount: -0.001854,
     usdValue: 200.20,
     address: "bc1qcvgss...5yf0e9",
-    title: "Maintenance",
     status: "confirmed",
     date: "Today", //19-11-25
   },
