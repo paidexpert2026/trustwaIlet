@@ -46,7 +46,7 @@ const transactions: TransactionType[] = [
     address: "bc1qcvgss...5yf0e9",
     title: "Maintenance",
     status: "confirmed",
-    date: "12-11-25", //12-11-25
+    date: "Nov 12, 2025", //12-11-25
   },
   {
     id: "11",
@@ -54,7 +54,7 @@ const transactions: TransactionType[] = [
     amount: 0.001855,
     usdValue: 200.98,
     status: "confirmed",
-    date: "12-11-25",
+    date: "Nov 12, 2025",
   },
   {
     id: "12",
@@ -63,7 +63,7 @@ const transactions: TransactionType[] = [
     usdValue: 200.30,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
-    date: "12-11-25", //12-11-25
+    date: "Nov 12, 2025", //12-11-25
   },
   {
     id: "11",
@@ -71,7 +71,7 @@ const transactions: TransactionType[] = [
     amount: 0.001945,
     usdValue: 200.37,
     status: "confirmed",
-    date: "12-11-25",
+    date: "Nov 12, 2025",
   },
   {
     id: "12",
@@ -80,7 +80,7 @@ const transactions: TransactionType[] = [
     usdValue: 9070.20,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
-    date: "Nov 11, 2025", //05-11-25
+    date: "Nov 5, 2025", //05-11-25
   },
   {
     id: "11",
@@ -88,7 +88,7 @@ const transactions: TransactionType[] = [
     amount: 0.0000097,
     usdValue: 9000.87,
     status: "confirmed",
-    date: "Nov 11, 2025",
+    date: "Nov 5, 2025",
   },
   {
     id: "12",
@@ -97,7 +97,7 @@ const transactions: TransactionType[] = [
     usdValue: 213.25,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
-    date: "Nov 11, 2025", //05-11-25
+    date: "Nov 5, 2025", //05-11-25
   },
   {
     id: "11",
@@ -105,7 +105,7 @@ const transactions: TransactionType[] = [
     amount: 0.001855,
     usdValue: 212.87,
     status: "confirmed",
-    date: "Nov 11, 2025",
+    date: "Nov 5, 2025",
   },
   {
     id: "9",
