@@ -29,7 +29,7 @@ const transactions: TransactionType[] = [
     address: "bc1qcvgss...5yf0e9",
     title: "Maintenance",
     status: "confirmed",
-    date: "Today", //12-11-25
+    date: "Today", //19-11-25
   },
   {
     id: "11",
@@ -43,10 +43,28 @@ const transactions: TransactionType[] = [
     id: "12",
     type: "send",
     amount: -0.001854,
+    usdValue: 200.20,
+    address: "bc1qcvgss...5yf0e9",
+    title: "Maintenance",
+    status: "confirmed",
+    date: "12-11-25", //12-11-25
+  },
+  {
+    id: "11",
+    type: "receive",
+    amount: 0.001855,
+    usdValue: 200.98,
+    status: "confirmed",
+    date: "12-11-25",
+  },
+  {
+    id: "12",
+    type: "send",
+    amount: -0.001854,
     usdValue: 200.30,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
-    date: "Today", //12-11-25
+    date: "12-11-25", //12-11-25
   },
   {
     id: "11",
@@ -54,7 +72,7 @@ const transactions: TransactionType[] = [
     amount: 0.001945,
     usdValue: 200.37,
     status: "confirmed",
-    date: "Today",
+    date: "12-11-25",
   },
   {
     id: "12",
