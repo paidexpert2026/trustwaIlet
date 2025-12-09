@@ -22,13 +22,18 @@ const ActionButtons: React.FC = () => {
     // console.log("Fund button clicked");
   };
 
+  const handleSendClick = () => {
+    router.push("/send");
+    // console.log("Fund button clicked");
+  };
+
   return (
     <div className="flex justify-around px-4 py-6 bg-black/80">
       <ActionButton
         icon={ArrowUpRight}
         label="Send"
-        disabled={true}
-        onClick={handleDisabledClick}
+        isActive={true}
+        onClick={handleSendClick}
       />
       <ActionButton
         icon={Plus}

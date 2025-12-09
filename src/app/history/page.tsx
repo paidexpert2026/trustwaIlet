@@ -28,7 +28,7 @@ const transactions: TransactionType[] = [
     usdValue: 350.10,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
-    date: "Today", //02-12-25
+    date: "Dec 2, 2025", //02-12-25
   },
   {
     id: "15",
@@ -36,7 +36,7 @@ const transactions: TransactionType[] = [
     amount: 0.001855,
     usdValue: 351.85,
     status: "confirmed",
-    date: "Today",
+    date: "Dec 2, 2025",
   },
   {
     id: "14",
