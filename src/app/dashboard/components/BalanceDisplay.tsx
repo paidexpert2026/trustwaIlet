@@ -1,6 +1,6 @@
 import React from "react";
 
-export const balance = 170597.46
+export const balance = 192069.18
 
 const BalanceDisplay= () => {
   return (

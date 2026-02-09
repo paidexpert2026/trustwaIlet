@@ -24,6 +24,24 @@ const transactions: TransactionType[] = [
   {
     id: "16",
     type: "send",
+    amount: -0.001564,
+    usdValue: 300.13,
+    address: "bc1qcvgss...5yf0e9",
+    status: "confirmed",
+    title: "Deposit",
+    date: "Feb 08, 2026", //08-02-26
+  },
+  {
+    id: "15",
+    type: "receive",
+    amount: 0.001455,
+    usdValue: 300.21,
+    status: "confirmed",
+    date: "Feb 08, 2026",
+  },
+  {
+    id: "16",
+    type: "send",
     amount: -0.001854,
     usdValue: 300.13,
     address: "bc1qcvgss...5yf0e9",
