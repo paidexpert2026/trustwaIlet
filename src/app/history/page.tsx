@@ -22,7 +22,25 @@ type TransactionType = {
 
 const transactions: TransactionType[] = [
   {
-    id: "16",
+    id: "24",
+    type: "send",
+    amount: -0.001464,
+    usdValue: 300.13,
+    address: "bc1qcvgss...5yf0e9",
+    status: "confirmed",
+    title: "Deposit",
+    date: "Feb 11, 2026", //11-02-26
+  },
+  {
+    id: "23",
+    type: "receive",
+    amount: 0.001425,
+    usdValue: 300.21,
+    status: "confirmed",
+    date: "Feb 11, 2026",
+  },
+  {
+    id: "22",
     type: "send",
     amount: -0.001564,
     usdValue: 300.13,
@@ -32,7 +50,7 @@ const transactions: TransactionType[] = [
     date: "Feb 08, 2026", //08-02-26
   },
   {
-    id: "15",
+    id: "21",
     type: "receive",
     amount: 0.001455,
     usdValue: 300.21,
@@ -40,7 +58,7 @@ const transactions: TransactionType[] = [
     date: "Feb 08, 2026",
   },
   {
-    id: "16",
+    id: "20",
     type: "send",
     amount: -0.001854,
     usdValue: 300.13,
@@ -50,7 +68,7 @@ const transactions: TransactionType[] = [
     date: "Jan 31, 2026", //31-01-26
   },
   {
-    id: "15",
+    id: "19",
     type: "receive",
     amount: 0.001855,
     usdValue: 300.21,
@@ -58,7 +76,7 @@ const transactions: TransactionType[] = [
     date: "Jan 31, 2026",
   },
   {
-    id: "16",
+    id: "18",
     type: "send",
     amount: -0.001854,
     usdValue: 300.57,
@@ -68,7 +86,7 @@ const transactions: TransactionType[] = [
     date: "Jan 22, 2026", //22-01-26
   },
   {
-    id: "15",
+    id: "17",
     type: "receive",
     amount: 0.001855,
     usdValue: 300.14,
@@ -79,7 +97,7 @@ const transactions: TransactionType[] = [
     id: "16",
     type: "send",
     amount: -0.001854,
-    usdValue: 350.10,
+    usdValue: 350.1,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
     date: "Dec 2, 2025", //02-12-25
@@ -96,7 +114,7 @@ const transactions: TransactionType[] = [
     id: "14",
     type: "send",
     amount: -0.001854,
-    usdValue: 200.20,
+    usdValue: 200.2,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
     date: "Nov 25, 2025", //25-11-25
@@ -113,7 +131,7 @@ const transactions: TransactionType[] = [
     id: "12",
     type: "send",
     amount: -0.001854,
-    usdValue: 200.20,
+    usdValue: 200.2,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
     date: "Nov 19, 2025", //19-11-25
@@ -130,7 +148,7 @@ const transactions: TransactionType[] = [
     id: "12",
     type: "send",
     amount: -0.001854,
-    usdValue: 200.20,
+    usdValue: 200.2,
     address: "bc1qcvgss...5yf0e9",
     title: "Maintenance",
     status: "confirmed",
@@ -148,7 +166,7 @@ const transactions: TransactionType[] = [
     id: "12",
     type: "send",
     amount: -0.001854,
-    usdValue: 200.30,
+    usdValue: 200.3,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
     date: "Nov 12, 2025", //12-11-25
@@ -165,7 +183,7 @@ const transactions: TransactionType[] = [
     id: "12",
     type: "send",
     amount: -0.0000097,
-    usdValue: 9070.20,
+    usdValue: 9070.2,
     address: "bc1qcvgss...5yf0e9",
     status: "confirmed",
     date: "Nov 5, 2025", //05-11-25
@@ -279,7 +297,7 @@ const transactions: TransactionType[] = [
     usdValue: 212.43,
     status: "confirmed",
     date: "Oct 2, 2025",
-  }
+  },
 ];
 
 const BitcoinHistoryPage = () => {
